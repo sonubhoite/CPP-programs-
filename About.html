@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+<style>
+	/* Reset basic margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section background */
+#about-section {
+  padding: 60px 0;
+  background: #f7f7f7;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Row flex */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Left image box */
+.img-about {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-about .img {
+  width: 100%;
+  height: 350px;
+  background-image: url('your-image.jpg'); /* <-- add image path */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Right content box */
+.heading-section h1.big {
+  font-size: 60px;
+  font-weight: 800;
+  color: #eaeaea;
+}
+
+.heading-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-info {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.about-info li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.about-info span:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button */
+.btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Counter section */
+.counter-wrap {
+  margin-top: 20px;
+}
+
+.number {
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .img-about .img {
+    height: 250px;
+  }
+
+  .heading-section h1.big {
+    font-size: 40px;
+  }
+  .img {
+  background-image: url('myphoto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  border-radius: 10px;
+}
+
+}
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body>
+	<div class="img d-flex align-self-stretch align-items-center" style="background-image:url('image/bg_1.jpg')";>
+		<div class="img d-flex align-self-stretch align-items-center">
+</div>
+
+
+     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url();">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p> </p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Aniket Bhoite</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>October 07, 2002</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>Pune, Maharashtra, India</span></li>
+		            	<li class="d-flex"><span>Zip code:</span> <span>411009</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>abhoite710@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+91 7499556236</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+              	<p class="mb-4">
+	                <span class="number" data-number="2">2</span>
+	                <span>Project complete</span>
+                </p>
+                <p><a href="https://drive.google.com/file/d/1hSVqqalW7HXaV-XVv_SifOaZbRFtxDxo/view?usp=drive_link" class="btn btn-primary py-3 px-3">Download CV</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+	</div>
+    </section>
+</body>
+</html>
